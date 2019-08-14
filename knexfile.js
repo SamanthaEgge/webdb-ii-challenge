@@ -3,9 +3,15 @@
 module.exports = {
 
   development: {
-    client: 'sqlite3',
+    client: 'postgresql',
+    // connection: {
+    //   filename: './data/car-dealer.db3',
+    // },
     connection: {
-      filename: './data/car-dealer.db3',
+      host: 'localhost',
+      database: 'webdb3',
+      user:     'postgres',
+      password: 'Chaoticneu21'
     },
     useNullAsDefault: true,
     migrations: {
